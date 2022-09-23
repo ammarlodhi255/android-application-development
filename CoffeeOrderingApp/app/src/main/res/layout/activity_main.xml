@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/coffee"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Toppings:"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/checkCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cream"
+            android:textSize="25sp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkChoc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chocolate"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:onClick="decreaseQuantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            ></Button>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            ></TextView>
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:onClick="increaseQuantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            ></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:onClick="processOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        ></Button>
+
+    <TextView
+        android:id="@+id/summaryTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="left"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="left"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        ></TextView>
+</LinearLayout>
