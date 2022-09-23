@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    >
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="446dp"
+        android:src="@drawable/a"
+        />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm so hungry"
+        android:textSize="45sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnEat"
+        android:onClick="eatCookie"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Eat a Cookie"
+        />
+</LinearLayout>
