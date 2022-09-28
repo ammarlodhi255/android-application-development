@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hangman!"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="50sp"
+        />
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/hangmanPic"
+            android:layout_width="151dp"
+            android:layout_height="183dp"
+            android:src="@drawable/hang0"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="The Word:"
+                ></TextView>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial Text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint="Guess"
+            android:textSize="25sp"></EditText>
+        
+        <Button
+            android:id="@+id/btnGuess"
+            android:onClick="guessClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Guess"></Button>
+
+        <Button
+            android:id="@+id/btnNew"
+            android:onClick="newClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="New"></Button>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/guessTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="You have guessed: ??? (3 guesses left)"
+        android:textSize="20sp"
+        ></TextView>
+</LinearLayout>
