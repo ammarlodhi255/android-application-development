@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Pin"
+        android:icon="@drawable/pin_launcher_foreground"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:title="Touch"
+        android:icon="@drawable/touch_launcher_foreground"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:title="Draw"
+        android:icon="@drawable/paint_launcher_foreground"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:title="Bookmark"
+        android:icon="@drawable/bookmark_launcher_foreground"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:title="Extra"
+        android:icon="@drawable/ic_launcher_background"
+        app:showAsAction="ifRoom"
+        ></item>
+</menu>
