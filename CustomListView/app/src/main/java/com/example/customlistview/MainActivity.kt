@@ -2,7 +2,6 @@ package com.example.customlistview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
 
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         list.add(Boxer("Lomachenko", R.drawable.loma))
         list.add(Boxer("Mike Tyson", R.drawable.tyson))
 
-        listView.adapter = CustomBaseAdapter(this, R.layout.activity_custom_list_view, list)
+        listView.adapter = CustomArrayAdapter(this, R.layout.activity_custom_list_view, list)
 
         // Creating an event listener for the list view
 

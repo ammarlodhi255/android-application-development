@@ -5,11 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class CustomBaseAdapter(val c: Context, val resource: Int, val boxers: List<Boxer>):
+class CustomArrayAdapter(val c: Context, val resource: Int, val boxers: List<Boxer>):
     ArrayAdapter<Boxer> (c, resource, boxers) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater: LayoutInflater = LayoutInflater.from(c)
