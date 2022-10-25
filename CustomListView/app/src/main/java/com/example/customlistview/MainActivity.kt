@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         this.listView = findViewById(R.id.listView)
 
-        val list = mutableListOf<Boxer>()
+        val list: ArrayList<Boxer> = ArrayList()
 
         list.add(Boxer("Floyd Mayweather", R.drawable.floyd))
         list.add(Boxer("Canelo Alvarez", R.drawable.canelo))
@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = CustomArrayAdapter(this, R.layout.activity_custom_list_view, list)
 
         // Creating an event listener for the list view
-
         listView.setOnItemClickListener { adapterView, view, i, l ->
             Toast.makeText(this, "Boxer: ${list[i].name}", Toast.LENGTH_LONG).show()
         }
