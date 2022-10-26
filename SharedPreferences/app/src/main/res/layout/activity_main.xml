@@ -32,4 +32,5 @@
         android:layout_height="wrap_content"
         android:text="Load"
         android:id="@+id/load_btn"/>
+
 </LinearLayout>
