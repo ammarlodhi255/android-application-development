@@ -262,7 +262,7 @@ class MyHomePage extends StatelessWidget {
               description: data[index].description,
               price: data[index].price),
           onTap: () {
-            //_showDialog(context);
+            // _showDialog(context);
             Navigator.push(
               context,
               MaterialPageRoute(
